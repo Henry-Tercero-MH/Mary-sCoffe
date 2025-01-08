@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mary's Coffee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-color: #f8f3e9;
+    }
+
+    .hero-section {
+      background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+    }
+
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      inset: 0;
+    }
+
+    .icon {
+      color: #c8a27a;
+      font-size: 2rem;
+    }
+
+    .menu-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #2c1810;
+      color: white;
+    }
+
+    .footer-hover:hover {
+      color: #c8a27a;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay d-flex align-items-center text-white text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Mary's Coffee</h1>
+        <p class="lead mb-4">¡Vive y Disfruta!</p>
+        <a href="#" class="btn btn-primary" style="background-color: #c8a27a; border: none;">Ver Menú</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="fas fa-coffee icon mb-3"></i>
+          <h4 class="fw-bold">Café de Especialidad</h4>
+          <p>Granos seleccionados de las mejores regiones de Guatemala.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-clock icon mb-3"></i>
+          <h4 class="fw-bold">Horario Extendido</h4>
+          <p>Lunes a Domingo: 7:00 AM - 10:00 PM</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-map-marker-alt icon mb-3"></i>
+          <h4 class="fw-bold">Ubicación Céntrica</h4>
+          <p>Fácil acceso en el corazón de la ciudad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bebidas Menu -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Menú Mari's Coffee</h2>
+      <div class="row g-4">
+
+        <!-- Bebidas Calientes -->
+        <h3 class="text-center fw-bold mb-4">Bebidas Calientes</h3>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/521697444/es/foto/taza-de-caf%C3%A9-con-granos-de-caf%C3%A9.webp?a=1&b=1&s=612x612&w=0&k=20&c=xNTXFtmowN6uTdaKLXISS6RhOAEXqGXaGfv6l_FKhkk="
+              class="card-img-top" alt="Café Simple">
+            <div class="card-body">
+              <h5 class="card-title">Café Simple</h5>
+              <p class="fw-bold text-primary">Q5.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhZmUlMjBjb24lMjBjcmVtYXxlbnwwfHwwfHx8MA%3D%3D"
+              class="card-img-top" alt="Café con Crema">
+            <div class="card-body">
+              <h5 class="card-title">Café con Crema</h5>
+              <p class="fw-bold text-primary">Q7.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/1460694670/es/foto/barista-hacer-taza-de-caf%C3%A9-latte-art.webp?a=1&b=1&s=612x612&w=0&k=20&c=0VJm85uaMMRz0saHoFL67HLkbJj-LUq5b9uXC2q7b7I="
+              class="card-img-top" alt="Café con Leche">
+            <div class="card-body">
+              <h5 class="card-title">Café con Leche</h5>
+              <p class="fw-bold text-primary">Q7.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1519682577862-22b62b24e493?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGV8ZW58MHx8MHx8fDA%3D"
+              class="card-img-top" alt="Frappe Normal">
+            <div class="card-body">
+              <h5 class="card-title">Te</h5>
+              <p class="fw-bold text-primary">Q5.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1675676357543-dd2845de6947?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FwdWNoaW5vfGVufDB8fDB8fHww"
+              class="card-img-top" alt="Frappe de Oreo">
+            <div class="card-body">
+              <h5 class="card-title">Capuchino</h5>
+              <p class="fw-bold text-primary">Q10.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1517578239113-b03992dcdd25?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGF6YSUyMGNob2NvbGF0ZSUyMGNhbGllbnR8ZW58MHx8MHx8fDA%3D"
+              class="card-img-top" alt="Frappe de Fresa">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Simple</h5>
+              <p class="fw-bold text-primary">Q8.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/2183496020/es/foto/barista-is-working-in-a-coffee-shop.webp?a=1&b=1&s=612x612&w=0&k=20&c=IMahP7zBAugUwY-LItFDFN-b-6M13F1gpxeAty_uQes="
+              class="card-img-top" alt="Chocolate con Leche">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate con Leche</h5>
+              <p class="fw-bold text-primary">Q10.00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postres -->
+        <h3 class="text-center fw-bold mb-4">Bebidas Frías</h3>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1471691118458-a88597b4c1f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fEZyYXBwZSUyMGJlYmlkYXxlbnwwfHwwfHx8MA%3D%3D"
+              class="card-img-top" alt="Frappe Normal">
+            <div class="card-body">
+              <h5 class="card-title">Frappe Normal</h5>
+              <p class="fw-bold text-primary">Q10.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1641665271888-575e46923776?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZyYXBwZSUyMG9yZW98ZW58MHx8MHx8fDA%3D"
+              class="card-img-top" alt="Frappe Oreo">
+            <div class="card-body">
+              <h5 class="card-title">Frappe Oreo</h5>
+              <p class="fw-bold text-primary">Q20.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/513590204/es/foto/caramelo-frappe-caf%C3%A9-capuchino.webp?a=1&b=1&s=612x612&w=0&k=20&c=Hhz_UIPLTWsgpyI4mdpILbGmCw9Dk2OlihWAHi2DpM4="
+              class="card-img-top" alt="Frappe Caramelo">
+            <div class="card-body">
+              <h5 class="card-title">Frappe Caramelo</h5>
+              <p class="fw-bold text-primary">Q15.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/1282514523/es/foto/splashing-batido-de-bayas-en-el-tel%C3%B3n-de-fondo-rosa.webp?a=1&b=1&s=612x612&w=0&k=20&c=whv2MtlNwUt5w78HTTUZowyZMiXEvRtq09mde6NRc58="
+              class="card-img-top" alt="Frappe Fresa">
+            <div class="card-body">
+              <h5 class="card-title">Frappe Fresa</h5>
+              <p class="fw-bold text-primary">Q20.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/155433038/es/foto/caf%C3%A9-con-leche-y-cocoa.webp?a=1&b=1&s=612x612&w=0&k=20&c=ovtKSuhDlhBZMd1Y-DRsTtRsKbYiIGyXYDA639SLi6g="
+              class="card-img-top" alt="Mocaccino">
+            <div class="card-body">
+              <h5 class="card-title">Mocaccino</h5>
+              <p class="fw-bold text-primary">Q20.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/2112209126/es/foto/taza-de-vidrio-de-smothie-en-una-cafeter%C3%ADa.webp?a=1&b=1&s=612x612&w=0&k=20&c=OLO_JrvBuled0o_osTe8LWQSwv5iQdCXJUq7IXM55dc="
+              class="card-img-top" alt="Smouthie">
+            <div class="card-body">
+              <h5 class="card-title">Smouthie</h5>
+              <p class="fw-bold text-primary">Q20.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1720446089066-661e8fb6b7b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGklQzMlQjFhJTIwY29sYWRhfGVufDB8fDB8fHww"
+              class="card-img-top" alt="Piña Colada">
+            <div class="card-body">
+              <h5 class="card-title">Piña Colada</h5>
+              <p class="fw-bold text-primary">Q20.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1478192013110-1203b3616b75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FmZSUyMGxhdGV8ZW58MHx8MHx8fDA%3D"
+              class="card-img-top" alt="Café Late">
+            <div class="card-body">
+              <h5 class="card-title">Café Late</h5>
+              <p class="fw-bold text-primary">Q15.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1562878424-0da674456d33?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhZmUlMjBmcmlvfGVufDB8fDB8fHww"
+              class="card-img-top" alt="Café Frío">
+            <div class="card-body">
+              <h5 class="card-title">Café Frío</h5>
+              <p class="fw-bold text-primary">Q12.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/178950492/es/foto/verano-bebidas-y-helados.webp?a=1&b=1&s=612x612&w=0&k=20&c=JRTkBHpvF1igB5agiUGL3fNwDSg7DRFDgpoVy1ZACY0="
+              class="card-img-top" alt="Frescos">
+            <div class="card-body">
+              <h5 class="card-title">Frescos</h5>
+              <p class="fw-bold text-primary">Q8.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1502389743708-d00f658638bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvY2ElMjBjb2xhfGVufDB8fDB8fHww"
+              class="card-img-top" alt="Gaseosas Litro">
+            <div class="card-body">
+              <h5 class="card-title">Gaseosas Litro</h5>
+              <p class="fw-bold text-primary">Q8.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1592232583482-ec6367cfb786?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29jYSUyMGNvbGF8ZW58MHx8MHx8fDA%3D"
+              class="card-img-top" alt="Gaseosas Pequeñas">
+            <div class="card-body">
+              <h5 class="card-title">Gaseosas Pequeñas</h5>
+              <p class="fw-bold text-primary">Q5.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Licuados</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/509237632/es/foto/de-licuados-jugos-bebidas-variedad.webp?a=1&b=1&s=612x612&w=0&k=20&c=5ZzGSXq77aocnXVNeJoqGTvOoGJTVh3Ux3i2UfeCSYE="
+              class="card-img-top" alt="Fresa Piña Melon">
+            <div class="card-body">
+              <h5 class="card-title">Fresa, Piña, Melon</h5>
+              <p class="fw-bold text-primary">Q10.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/537522498/es/foto/batidos-de-frutas-reci%C3%A9n-mezcla-de-varios-colores-y-sabores.webp?a=1&b=1&s=612x612&w=0&k=20&c=6AjeCGebUbt1j6eeZWDDB6bWT2LdKJsSme8kNiJjSmw="
+              class="card-img-top" alt="Licuado Mixto">
+            <div class="card-body">
+              <h5 class="card-title">Licuado Mixto</h5>
+              <p class="fw-bold text-primary">Q15.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1521483451569-e33803c0330c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxpY3VhZG8lMjBkZSUyMGNlcmVhbHxlbnwwfHwwfHx8MA%3D%3D"
+              class="card-img-top" alt="Licuados de cereal">
+            <div class="card-body">
+              <h5 class="card-title">Licuados de Cereal</h5>
+              <p class="fw-bold text-primary">Q10.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/453427657/es/foto/refrescantes-deliciosas-leche-con-chocolate.webp?a=1&b=1&s=612x612&w=0&k=20&c=8Kn2ccCna6bBzNPvUswsVSg6jYVYteWRvaz2NHS7y8s="
+              class="card-img-top" alt="Chocomilk">
+            <div class="card-body">
+              <h5 class="card-title">Chocomilk</h5>
+              <p class="fw-bold text-primary">Q10.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Postres -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Postres</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1699239049451-817c97b945f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNyZXBhfGVufDB8fDB8fHww"
+              class="card-img-top" alt="Crepa">
+            <div class="card-body">
+              <h5 class="card-title">Crepa</h5>
+              <p class="fw-bold text-primary">Q12.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1565087170449-fa23854a6100?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNyZXBhfGVufDB8fDB8fHww"
+              class="card-img-top" alt="Crepa con Helado">
+            <div class="card-body">
+              <h5 class="card-title">Crepa con Helado</h5>
+              <p class="fw-bold text-primary">Q15.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/610744160/es/foto/mantequilla-de-man%C3%AD-s%C3%A1ndwiches.webp?a=1&b=1&s=612x612&w=0&k=20&c=YhbKLlTVM-YGXKlnxxx_KEpFTBAuqQ4yinGm9qI55vo="
+              class="card-img-top" alt="Sándwich Dulce">
+            <div class="card-body">
+              <h5 class="card-title">Sándwich Dulce</h5>
+              <p class="fw-bold text-primary">Q5.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1502174832274-bc176e52765a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVsYWRpdG9zfGVufDB8fDB8fHww"
+              class="card-img-top" alt="Heladitos">
+            <div class="card-body">
+              <h5 class="card-title">Heladitos</h5>
+              <p class="fw-bold text-primary">Q5.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Comida -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Comida</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1673581152327-f41d5914ccc3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2FuZHdpY2h8ZW58MHx8MHx8fDA%3D"
+              class="card-img-top" alt="Crepa">
+            <div class="card-body">
+              <h5 class="card-title">Sándwich Pollo / Jamón</h5>
+              <p class="fw-bold text-primary">Q7.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://delrealfoods.com/cdn/shop/articles/Tostadads_de_Pollo.jpg?v=1629411669"
+              class="card-img-top" alt="Crepa con Helado">
+            <div class="card-body">
+              <h5 class="card-title">Tostadas con Pollo</h5>
+              <p class="fw-bold text-primary">Q7.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://guerrerotortillas.com/wp-content/uploads/2021/04/beef-tostadas.jpg" class="card-img-top"
+              alt="Tostadas con Carne">
+            <div class="card-body">
+              <h5 class="card-title">Tostadas con Carne</h5>
+              <p class="fw-bold text-primary">Q8.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp6tIaFPHck4bR5Ekv8gaKp2g-E8YtwRjRzcdEw4lZsJG54chofGM6xsv19t7j_ZcnVE8&usqp=CAU"
+              class="card-img-top" alt="Enrolladas">
+            <div class="card-body">
+              <h5 class="card-title">Enrolladas (3)</h5>
+              <p class="fw-bold text-primary">Q10.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/1313361282/es/foto/envoltura-de-salchichas-de-arroz-y-chorizo-mexicanos.webp?a=1&b=1&s=612x612&w=0&k=20&c=AUH4DYNNcCmBoqSW6i9KPrYq8iwwkqw3zLrfD-PgT0g="
+              class="card-img-top" alt="Burritos">
+            <div class="card-body">
+              <h5 class="card-title">Burritos</h5>
+              <p class="fw-bold text-primary">Q17.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1582169296194-e4d644c48063?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmFjaG9zJTIwcHJlcGFyYWRvc3xlbnwwfHwwfHx8MA%3D%3D"
+              class="card-img-top" alt="Nachos Preparados">
+            <div class="card-body">
+              <h5 class="card-title">Nachos Preparados</h5>
+              <p class="fw-bold text-primary">Q10.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://i.pinimg.com/550x/f8/80/b8/f880b80adce8bffb857fe08c530e2cdf.jpg" class="card-img-top"
+              alt="Banderín">
+            <div class="card-body">
+              <h5 class="card-title">Banderín</h5>
+              <p class="fw-bold text-primary">Q10.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="https://i.ytimg.com/vi/tYRn_gJe_wA/hqdefault.jpg" class="card-img-top" alt="Banderín">
+            <div class="card-body">
+              <h5 class="card-title">Banderín con papas</h5>
+              <p class="fw-bold text-primary">Q15.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/1487083913/es/foto/la-salchipapa-o-salchipapas-es-una-comida-r%C3%A1pida-que-consiste-en-rodajas-fritas-de-salchicha-y.webp?a=1&b=1&s=612x612&w=0&k=20&c=thiA2oDxk3lnk4uKGjq-nRSJqI0Jea4blfKlGopLxug="
+              class="card-img-top" alt="Salchipapas">
+            <div class="card-body">
+              <h5 class="card-title">Salchipapas</h5>
+              <p class="fw-bold text-primary">Q15.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/1459331535/es/foto/papas-fritas-aisladas-sobre-un-fondo-blanco.webp?a=1&b=1&s=612x612&w=0&k=20&c=eRzEdHXGyN3CE76NZhIf4-JbJM3oaMVetAOR3xl0qSQ="
+              class="card-img-top" alt="Papas Fritas">
+            <div class="card-body">
+              <h5 class="card-title">Papas Fritas</h5>
+              <p class="fw-bold text-primary">Q15.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hamburguesas Menu -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Nuestras Hamburguesas</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/1438143625/es/foto/hamburguesa-doble-de-carne-de-queso-con-fondo-de-cocina.webp?a=1&b=1&s=612x612&w=0&k=20&c=VQwTpbuWuoFSQob6-1Wv64WrNBQK56b_AY8I5_m2Vso="
+              class="card-img-top" alt="Hamburguesa">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa Clásica</h5>
+              <p class="fw-bold text-primary">Q15.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://media.istockphoto.com/id/495204032/es/foto/sabrosa-hamburguesa-frescos.webp?a=1&b=1&s=612x612&w=0&k=20&c=FblBXfoGXErgbfjZ-p-KBm5V5irLdL-BW4JVQyo6fiY="
+              class="card-img-top" alt="Hamburguesa con papas fritas">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa con Papas Fritas</h5>
+              <p class="fw-bold text-primary">Q20.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhhbWJ1cmd1ZXNhJTIwcmFuY2hlcmF8ZW58MHx8MHx8fDA%3D"
+              class="card-img-top" alt="Hamburguesa Ranchera">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa Ranchera</h5>
+              <p class="fw-bold text-primary">Q25.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img
+              src="https://images.unsplash.com/photo-1460306855393-0410f61241c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aGFtYnVyZ3Vlc2ElMjByYW5jaGVyYSUyMG1lbnV8ZW58MHx8MHx8fDA%3D"
+              class="card-img-top" alt="Hamburguesa Ranchera con papas">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa Ranchera con Papas</h5>
+              <p class="fw-bold text-primary">Q25.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h5>Contacto</h5>
+          <p><i class="fas fa-phone"></i> +502 2234 5678</p>
+          <p><i class="fas fa-map-marker-alt"></i> 6a Avenida, Zona 1, Guatemala</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Síguenos</h5>
+          <p>
+            <i class="fab fa-instagram me-3 footer-hover"></i>
+            <i class="fab fa-facebook me-3 footer-hover"></i>
+            <i class="fab fa-twitter footer-hover"></i>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5>Newsletter</h5>
+          <form class="d-flex">
+            <input type="email" class="form-control rounded-0" placeholder="Tu email">
+            <button class="btn btn-primary rounded-0" style="background-color: #c8a27a;">Suscribir</button>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2024 Mary's Coffee. Todos los derechos reservados.</p>
+        <p>hemisterhe</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
